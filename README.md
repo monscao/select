@@ -7,7 +7,7 @@ select-all:
 single-green:
 ![select_2.png](https://i.loli.net/2021/10/21/FNrdhsUjPk5o3He.png)
 
-multiple-blue:
+single-blue:
 ![select_3.png](https://i.loli.net/2021/10/21/KwWsLo63ecS1uB5.png)
 
 multiple-green:
