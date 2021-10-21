@@ -1,0 +1,209 @@
+.common-single-selector,
+.common-multiple-selector {
+    width: 100%;
+    height: 100%;
+    min-width: 64px;
+    position: relative;
+}
+
+.common-single-selector .single-selector-input {
+    height: 32px;
+    outline: none;
+    display: flex;
+    padding: 0 8px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 32px;
+    border-radius: 4px;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-top: 1.02px solid #D9D9D9;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+.common-single-selector .single-selector-input div {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    margin-right: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.common-single-selector .single-selector-input img {
+    width: 12px;
+    height: 12px;
+    margin-top: -2px;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+.common-single-selector .single-selector-input .img-expand {
+    transform: rotate(180deg);
+}
+
+.common-multiple-selector .multiple-selector-input {
+    cursor: text;
+    height: 32px;
+    outline: none;
+    display: flex;
+    overflow: auto;
+    font-size: 16px;
+    padding-left: 5px;
+    border-radius: 4px;
+    padding-bottom: 3px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-top: 1.02px solid #D9D9D9;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+
+.common-multiple-selector .multiple-selector-input ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.common-multiple-selector .multiple-selector-input .selected-item {
+    float: left;
+    height: 24px;
+    display: flex;
+    padding: 0 6px;
+    max-width: 99%;
+    min-width: 64px;
+    cursor: default;
+    overflow: hidden;
+    line-height: 22px;
+    position: relative;
+    border-radius: 2px;
+    align-items: center;
+    flex-direction: row;
+    margin: 3px 4px 0px 0;
+    color: rgba(0,0,0,.65);
+    background-color: #FAFAFA;
+    border: 1px solid #E8E8E8;
+}
+
+.common-multiple-selector .multiple-selector-input ul li:last-child {
+    float: left;
+    height: 27px;
+    margin-top: 3px;
+}
+
+.common-multiple-selector .multiple-selector-input ul li img {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.common-multiple-selector .multiple-selector-input ul li div {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    transition: margin .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.common-multiple-selector .multiple-selector-input ul li input {
+    width: 3px;
+    padding: 0;
+    height: 24px;
+    border: none;
+    display: block;
+    max-width: 100%;
+    border-radius: initial;
+}
+
+.common-single-selector .single-selector-options,
+.common-multiple-selector .multiple-selector-options {
+    padding: 0;
+    z-index: 3;
+    width: 100%;
+    display: none;
+    margin-top: 4px;
+    list-style: none;
+    position: absolute;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+
+.common-single-selector .single-selector-options ul,
+.common-multiple-selector .multiple-selector-options ul {
+    outline: none;
+    overflow: auto;
+    padding: 4px 0;
+    list-style: none;
+    margin-bottom: 0;
+    max-height: 250px;
+}
+
+.common-single-selector .single-selector-options ul li,
+.common-multiple-selector .multiple-selector-options ul li {
+    display: flex;
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 5px 12px;
+    position: relative;
+    white-space: nowrap;
+    color: rgba(0,0,0,.65);
+    text-overflow: ellipsis;
+    transition: background .3s ease;
+}
+
+.common-single-selector .single-selector-options ul li div,
+.common-multiple-selector .multiple-selector-options ul li div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.common-single-selector .single-selector-options ul li img,
+.common-multiple-selector .multiple-selector-options ul li img {
+    margin-left: auto;
+}
+
+.common-single-selector .single-selector-options ul .option-selected,
+.common-multiple-selector .multiple-selector-options ul .option-selected {
+    background: #FAFAFA;
+}
+
+.single-selector-blue .single-selector-input:hover,
+.multiple-selector-blue .multiple-selector-input:hover {
+    border-color: #40A9FF;
+}
+
+.single-selector-blue .selector-active,
+.multiple-selector-blue .selector-active {
+    border-color: #40A9FF;
+    box-shadow: 0 0 0 2px rgb(24 144 255 / 20%);
+}
+
+.single-selector-blue .single-selector-options ul li:hover,
+.multiple-selector-blue .multiple-selector-options ul li:hover {
+    background: #E6F7FF;
+}
+
+.single-selector-green .single-selector-input:hover,
+.multiple-selector-green .multiple-selector-input:hover {
+    border-color: #23CF9C;
+}
+
+.single-selector-green .selector-active,
+.multiple-selector-green .selector-active {
+    border-color: #23CF9C;
+    box-shadow: 0 0 0 2px rgb(35 208 157 / 20%);
+}
+
+.single-selector-green .single-selector-options ul li:hover,
+.multiple-selector-green .multiple-selector-options ul li:hover {
+    background: #E4FDF6;
+}
